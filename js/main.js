@@ -156,9 +156,9 @@
       } else if (type == 'upperLetter') {
         pool = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
       }
-      // else if (type == "symbol"){
-      // 	pool = ",.?/\\(^)![]{}*&^%$#'\"";
-      // }
+      else if (type == "symbol"){
+      	pool = ",.?/\\(^)![]{}*&^%$#'\"";
+      }
 
       var arr = pool.split('')
       return arr[Math.floor(Math.random() * arr.length)]
@@ -435,34 +435,7 @@ var main = function () {
 
 $(document).ready(main)
 
-// $(window).load(function () {
-//   var $post_para = $('.post-para'),
-//     $digm = $('.digm'),
-//     $pre_para = $('.pre-para')
 
-//   $('#loading-screen').slideUp(600, function () {
-//     $('html,body').css('overflow-y', 'auto')
-//   })
-
-//   $pre_para.removeClass('invisible')
-//   $digm.text('prev')
-//   setTimeout(function () {
-//     $pre_para.shuffleLetters({ text: 'Welcome' })
-//     $digm.shuffleLetters({ text: 'M3CH5' })
-//     $digm.text('mechs')
-//   }, 1000)
-//   setTimeout(function () {
-//     $pre_para.shuffleLetters({ text: 'to' })
-//     $digm.shuffleLetters({ text: 'mechs' })
-//     $digm.text('mechs')
-//   }, 2000)
-
-//   setTimeout(function () {
-//     $pre_para.addClass('invisible')
-//     $post_para.fadeIn(600)
-//     $digm.text('mechs')
-//   }, 3000)
-// })
 function myFunction() {
   var $post_para = $('.post-para'),
     $digm = $('.digm'),
