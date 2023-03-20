@@ -7,33 +7,32 @@
 */
 
 @font-face {
-  font-family: "Exo2.0-Black";
-  src: url("../fonts/exo_2.0/Exo2.0-Black.eot"),
-    url("../fonts/exo_2.0/Exo2.0-Black.otf");
+  font-family: 'Exo2.0-Black';
+  src: url('../fonts/exo_2.0/Exo2.0-Black.eot'),
+    url('../fonts/exo_2.0/Exo2.0-Black.otf');
 }
 
 @font-face {
-  font-family: "Exo2.0-Bold";
-  src: url("../fonts/exo_2.0/Exo2.0-Bold.eot"),
-    url("../fonts/exo_2.0/Exo2.0-Bold.otf");
+  font-family: 'Exo2.0-Bold';
+  src: url('../fonts/exo_2.0/Exo2.0-Bold.eot'),
+    url('../fonts/exo_2.0/Exo2.0-Bold.otf');
 }
 
 @font-face {
-  font-family: "Exo2.0-Thin";
-  src: url("../fonts/exo_2.0/Exo2.0-Thin.eot"),
-    url("../fonts/exo_2.0/Exo2.0-Thin.otf");
+  font-family: 'Exo2.0-Thin';
+  src: url('../fonts/exo_2.0/Exo2.0-Thin.eot'),
+    url('../fonts/exo_2.0/Exo2.0-Thin.otf');
 }
 
 @font-face {
-  font-family: "Exo2.0-Regular";
-  src: url("../fonts/exo_2.0/Exo2.0-Regular.eot"),
-    url("../fonts/exo_2.0/Exo2.0-Regular.otf");
+  font-family: 'Exo2.0-Regular';
+  src: url('../fonts/exo_2.0/Exo2.0-Regular.eot'),
+    url('../fonts/exo_2.0/Exo2.0-Regular.otf');
 }
 
 body {
-  font-family: "Exo2.0-Regular", sans-serif;
+  font-family: 'Exo2.0-Regular', sans-serif;
   background-color: #f5f5f5;
-  
 }
 
 ::-webkit-scrollbar {
@@ -78,22 +77,16 @@ body {
 
 .logo {
   transition: background 0.3s ease-out;
-  background: url("../img/dynamechs2k23_logo1.png") no-repeat;
+  background: url('../img/dynamechs2k23_logo1.png') no-repeat;
   background-size: contain;
 }
-
-
-
-
-
-
 
 .logo-box p {
   margin: 0;
   height: 75px;
 }
 
-.logo>a {
+.logo > a {
   text-indent: -9999px;
 }
 
@@ -107,7 +100,7 @@ body {
 .menu-button {
   display: none;
   float: right;
-  background: url("../img/menu-button.png") left center;
+  background: url('../img/menu-button.png') left center;
   width: 36px;
   height: 50px;
 }
@@ -124,14 +117,14 @@ body {
 }
 
 .nav a {
-  font-family: "Exo2.0-Thin", sans-serif;
+  font-family: 'Exo2.0-Thin', sans-serif;
   text-transform: uppercase;
   position: relative;
   top: 10px;
   text-decoration: none;
   color: #f5f5f5;
   padding: 29px 10px;
-  background: url("../img/nav-bg.png") no-repeat;
+  background: url('../img/nav-bg.png') no-repeat;
   background-position: 300px 0px;
   transition: background 0.3s linear, color 0.3s linear;
 }
@@ -166,12 +159,12 @@ body {
   width: 100%;
   height: 100%;
   min-height: 600px;
-  background: #333 url("../img/slide-bg.jpg") no-repeat center center fixed;
+  background: #333 url('../img/slide-bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
 .overlay-pattern {
-  background: url("../img/black-pattern.png");
+  background: url('../img/black-pattern.png');
   width: 100%;
   height: 100%;
 }
@@ -255,13 +248,13 @@ body {
   height: 80px;
   color: #f5f5f5;
   font-size: 4em;
-  font-family: "Exo2.0-Thin", sans-serif;
+  font-family: 'Exo2.0-Thin', sans-serif;
   text-align: left;
   padding-left: 20px;
 }
 
 .para {
-  font-family: "Exo2.0-Bold", sans-serif;
+  font-family: 'Exo2.0-Bold', sans-serif;
   font-size: 8em;
   color: #cd2929;
   height: 0px;
@@ -277,7 +270,7 @@ body {
   box-sizing: border-box;
   font-size: 7em;
   color: #f5f5f5;
-  font-family: "Exo2.0-Thin", sans-serif;
+  font-family: 'Exo2.0-Thin', sans-serif;
 }
 
 .post-para {
@@ -285,7 +278,7 @@ body {
   line-height: 260px;
   color: #cd2929;
   font-size: 3em;
-  font-family: "Exo2.0-Bold", sans-serif;
+  font-family: 'Exo2.0-Bold', sans-serif;
   display: none;
   padding-right: 55px;
 }
@@ -293,13 +286,13 @@ body {
 /* NOTE: about section css begins*/
 .about-container {
   height: auto;
-  background: url("../img/bg_dots_black.png");
+  background: url('../img/bg_dots_black.png');
   padding: 50px 0;
 }
 
 .section-title {
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
-  font-family: "Exo2.0-Bold", sans-serif;
+  font-family: 'Exo2.0-Bold', sans-serif;
   font-size: 2em;
   text-transform: uppercase;
   text-align: center;
@@ -317,7 +310,7 @@ body {
   margin: 0 auto;
   padding: 40px 0;
   text-align: center;
-  font-family: "Exo2.0-Regular", sans-serif;
+  font-family: 'Exo2.0-Regular', sans-serif;
   font-size: 15px;
 }
 
@@ -344,7 +337,7 @@ body {
   justify-content: center;
   display: flex;
   text-transform: uppercase;
-  font-family: "Exo2.0-Bold", sans-serif;
+  font-family: 'Exo2.0-Bold', sans-serif;
 }
 
 .num-event {
@@ -376,18 +369,18 @@ body {
 .register-container {
   width: 100%;
   height: auto;
-  background: #333 url("../img/slide-bg.jpg") no-repeat center center fixed;
+  background: #333 url('../img/slide-bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
 .black-overlay {
   width: 100%;
   height: 100%;
-  background: url("../img/black-pattern.png");
+  background: url('../img/black-pattern.png');
 }
 
 .member-detail {
-  font-family: "Exo2.0-Bold", sans-serif;
+  font-family: 'Exo2.0-Bold', sans-serif;
   color: #a4a4a4;
   padding: 25px 0;
 }
@@ -436,7 +429,7 @@ body {
   background: #cd2929;
   color: #f5f5f5;
   font-size: 1.2em;
-  font-family: "Exo2.0-Thin", sans-serif;
+  font-family: 'Exo2.0-Thin', sans-serif;
 }
 
 .reg-button:hover {
@@ -495,11 +488,9 @@ body {
   margin-right: 10px;
 }
 
-
 .cr-names-continaer {
   width: 100%;
 }
-
 
 .social-img {
   margin-bottom: 5px;
@@ -512,56 +503,56 @@ body {
   justify-content: flex-start;
 }
 
-.event-1>.event-image {
-  background: #fff url("../img/eddard.png") no-repeat;
+.event-1 > .event-image {
+  background: #fff url('../img/eddard.png') no-repeat;
 }
 
-.event-2>.event-image {
-  background: #fff url("../img/web.jpg") no-repeat;
+.event-2 > .event-image {
+  background: #fff url('../img/web.jpg') no-repeat;
 }
 
-.event-3>.event-image {
-  background: #fff url("../img/itachi.jpg") no-repeat;
+.event-3 > .event-image {
+  background: #fff url('../img/itachi.jpg') no-repeat;
 }
 
-.event-4>.event-image {
-  background: #fff url("../img/nine.png") no-repeat;
+.event-4 > .event-image {
+  background: #fff url('../img/nine.png') no-repeat;
 }
 
-.event-5>.event-image {
-  background: #fff url("../img/golem.png") no-repeat;
+.event-5 > .event-image {
+  background: #fff url('../img/golem.png') no-repeat;
 }
 
-.event-6>.event-image {
-  background: #fff url("../img/zorro.png") no-repeat;
+.event-6 > .event-image {
+  background: #fff url('../img/zorro.png') no-repeat;
 }
 
-.event-7>.event-image {
-  background: #fff url("../img/botno.png") no-repeat;
+.event-7 > .event-image {
+  background: #fff url('../img/botno.png') no-repeat;
 }
 
-.event-8>.event-image {
-  background: #fff url("../img/jacksparrow.png") no-repeat;
+.event-8 > .event-image {
+  background: #fff url('../img/jacksparrow.png') no-repeat;
 }
 
-.event-9>.event-image {
-  background: #fff url("../img/nine.png") no-repeat;
+.event-9 > .event-image {
+  background: #fff url('../img/nine.png') no-repeat;
 }
 
-.event-10>.event-image {
-  background: #fff url("../img/zorro.png") no-repeat;
+.event-10 > .event-image {
+  background: #fff url('../img/zorro.png') no-repeat;
 }
 
-.event-11>.event-image {
-  background: #fff url("../img/jacksparrow.png") no-repeat;
+.event-11 > .event-image {
+  background: #fff url('../img/jacksparrow.png') no-repeat;
 }
 
-.event-12>.event-image {
-  background: #fff url("../img/botno.png") no-repeat;
+.event-12 > .event-image {
+  background: #fff url('../img/botno.png') no-repeat;
 }
 
-.event-13>.event-image {
-  background: #fff url("../img/itachi.jpg") no-repeat;
+.event-13 > .event-image {
+  background: #fff url('../img/itachi.jpg') no-repeat;
 }
 
 .event-image {
@@ -626,7 +617,7 @@ li ol li {
 
 .info {
   height: 100%;
-  font-family: "Exo2.0-Regular", sans-serif;
+  font-family: 'Exo2.0-Regular', sans-serif;
   color: #fff;
   text-align: center;
   width: 100%;
@@ -645,7 +636,7 @@ li ol li {
 }
 
 .desc {
-  font-family: "Exo2.0-Regular", sans-serif;
+  font-family: 'Exo2.0-Regular', sans-serif;
   width: 100%;
   height: 65%;
   padding: 0.7em;
@@ -654,7 +645,7 @@ li ol li {
 }
 
 .event_title {
-  font-family: "Exo2.0-Bold", sans-serif;
+  font-family: 'Exo2.0-Bold', sans-serif;
   width: 100%;
   padding-left: 3%;
   box-sizing: border-box;
@@ -665,8 +656,8 @@ li ol li {
 
 .button {
   width: 100%;
-  
-  font-family: "Exo2.0-Bold", sans-serif;
+
+  font-family: 'Exo2.0-Bold', sans-serif;
 }
 
 .instruction {
@@ -680,7 +671,7 @@ li ol li {
 .ins {
   text-decoration: none;
   color: inherit;
-  font-family: "Exo2.0-Thin", sans-serif;
+  font-family: 'Exo2.0-Thin', sans-serif;
   font-size: 1.8em;
   background: #cd2929;
   padding: 0.3em;
@@ -691,7 +682,7 @@ li ol li {
 }
 
 .contact {
-  font-family: "Exo2.0-Regular", sans-serif;
+  font-family: 'Exo2.0-Regular', sans-serif;
   font-size: 15px;
   height: 30%;
   width: 100%;
@@ -712,14 +703,12 @@ li ol li {
 }
 
 .inf {
-  
-    width: 100%;
-    float: left;
-    height: 80%;
-    align-items: center;
-    font-size: 16px;
-    font-family: "Exo2.0-Regular";
-  
+  width: 100%;
+  float: left;
+  height: 80%;
+  align-items: center;
+  font-size: 16px;
+  font-family: 'Exo2.0-Regular';
 }
 
 .head1 {
@@ -732,13 +721,13 @@ li ol li {
 .head-name {
   font-size: 2.5em;
   line-height: 37px;
-  font-family: "Exo2.0-Thin", sans-serif;
+  font-family: 'Exo2.0-Thin', sans-serif;
   font-variant: small-caps;
   text-align: center;
 }
 
 .ph {
-  font-family: "Exo2.0-Bold", sans-serif;
+  font-family: 'Exo2.0-Bold', sans-serif;
   font-size: 15px;
 }
 
@@ -792,7 +781,7 @@ footer {
   color: #a4a4a4;
   padding-top: 20px;
   text-align: center;
-  font-family: "Exo2.0-Regular", sans-serif;
+  font-family: 'Exo2.0-Regular', sans-serif;
   padding-bottom: 20px;
 }
 
@@ -808,15 +797,14 @@ footer {
 /* NOTE: EVENT GRID CSS BEGINS */
 .event-container {
   padding: 50px 0;
-  background: url("../img/bg_dots_black.png");
-  
+  background: url('../img/bg_dots_black.png');
 }
 
 .event_column {
   height: 200px;
   cursor: pointer;
   /* background-color: #bc2525; */
-  border-radius:20px;
+  border-radius: 20px;
   /*border: 1px solid black;*/
 }
 
@@ -836,7 +824,6 @@ footer {
   text-shadow: 1px 0px #111;
 }
 
-
 .eventhover {
   display: none;
   width: 100%;
@@ -844,7 +831,7 @@ footer {
   border-radius: 20px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Exo2.0-Bold", sans-serif;
+  font-family: 'Exo2.0-Bold', sans-serif;
   font-size: 1.3em;
   color: #cd2929;
   text-shadow: 1px 0px #111;
@@ -858,14 +845,14 @@ footer {
 
 .event-hover-active {
   display: block;
-  background: rgba(0, 0, 0, 0.5) url("../img/black-pattern.png");
+  background: rgba(0, 0, 0, 0.5) url('../img/black-pattern.png');
   /*height:200px;*/
   position: relative;
   bottom: 200px;
 }
 
 .plus {
-  background: url("../img/more.png") no-repeat 50% 60%;
+  background: url('../img/more.png') no-repeat 50% 60%;
   background-size: 20% 23%;
 }
 
@@ -874,7 +861,7 @@ footer {
   align-items: center;
   justify-content: center;
 
-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .image-container {
@@ -885,34 +872,48 @@ flex-wrap: wrap;
 }
 
 .img-staff {
+  border-radius: 50px;
   width: 250px;
   height: 250px;
   padding: 20px;
   padding-bottom: 5px;
   margin-right: 15px;
-  
+  transition: 1s;
+}
+
+.img-staff:hover,
+.img-name:hover,
+.img-para:hover {
+  transform: scale(1.12);
+  z-index: 4;
+}
+
+.img-staff-third:hover {
+  transform: scale(1.12);
+  z-index: 4;
 }
 
 .img-staff-third {
   width: 250px;
+  border-radius: 50px;
   height: 250px;
-  padding: 20px; 
+  padding: 20px;
   padding-bottom: 5px;
   margin-right: 15px;
   /* background-color: white; */
+  transition: 1s;
 }
 
 .img-name {
   color: white;
-  font-family: "Exo2.0-Regular", sans-serif;
-  ;
+  font-family: 'Exo2.0-Regular', sans-serif;
   font-size: 24px;
   margin: 0px;
+  transition: transform 0.2s ease-in-out;
 }
 
 .img-para {
-  font-family: "Exo2.0-Regular", sans-serif;
-  ;
+  font-family: 'Exo2.0-Regular', sans-serif;
   color: red;
   font-size: 15px;
   margin: 0px;
@@ -1130,7 +1131,7 @@ flex-wrap: wrap;
 .container:after,
 .row:after,
 .u-cf {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -1450,4 +1451,5 @@ flex-wrap: wrap;
 }
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
