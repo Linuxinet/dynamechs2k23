@@ -1,7 +1,7 @@
 // Avoid `console` errors in browsers that lack a console.
-;(function () {
+; (function () {
   var method
-  var noop = function () {}
+  var noop = function () { }
   var methods = [
     'assert',
     'clear',
@@ -41,129 +41,129 @@
   }
 })()
 
-// Place any jQuery/helper plugins in here.
-/**
- * @name		Shuffle Letters
- * @author		Martin Angelov
- * @version 	1.0
- * @url			http://tutorialzine.com/2011/09/shuffle-letters-effect-jquery/
- * @license		MIT License
- */
+  // Place any jQuery/helper plugins in here.
+  /**
+   * @name		Shuffle Letters
+   * @author		Martin Angelov
+   * @version 	1.0
+   * @url			http://tutorialzine.com/2011/09/shuffle-letters-effect-jquery/
+   * @license		MIT License
+   */
 
-;(function ($) {
-  $.fn.shuffleLetters = function (prop) {
-    var options = $.extend(
-      {
-        step: 8, // How many times should the letters be changed
-        fps: 30, // Frames Per Second
-        text: '', // Use this text instead of the contents
-        callback: function () {}, // Run once the animation is complete
-      },
-      prop,
-    )
+  ; (function ($) {
+    $.fn.shuffleLetters = function (prop) {
+      var options = $.extend(
+        {
+          step: 8, // How many times should the letters be changed
+          fps: 30, // Frames Per Second
+          text: '', // Use this text instead of the contents
+          callback: function () { }, // Run once the animation is complete
+        },
+        prop,
+      )
 
-    return this.each(function () {
-      var el = $(this),
-        str = ''
+      return this.each(function () {
+        var el = $(this),
+          str = ''
 
-      // Preventing parallel animations using a flag;
+        // Preventing parallel animations using a flag;
 
-      if (el.data('animated')) {
-        return true
-      }
+        if (el.data('animated')) {
+          return true
+        }
 
-      el.data('animated', true)
+        el.data('animated', true)
 
-      if (options.text) {
-        str = options.text.split('')
-      } else {
-        str = el.text().split('')
-      }
-
-      // The types array holds the type for each character;
-      // Letters holds the positions of non-space characters;
-
-      var types = [],
-        letters = []
-
-      // Looping through all the chars of the string
-
-      for (var i = 0; i < str.length; i++) {
-        var ch = str[i]
-
-        if (ch == ' ') {
-          types[i] = 'space'
-          continue
-        } else if (/[a-z]/.test(ch)) {
-          types[i] = 'lowerLetter'
-        } else if (/[A-Z]/.test(ch)) {
-          types[i] = 'upperLetter'
+        if (options.text) {
+          str = options.text.split('')
         } else {
-          types[i] = 'symbol'
+          str = el.text().split('')
         }
 
-        letters.push(i)
-      }
+        // The types array holds the type for each character;
+        // Letters holds the positions of non-space characters;
 
-      el.html('')
+        var types = [],
+          letters = []
 
-      // Self executing named function expression:
+        // Looping through all the chars of the string
 
-      ;(function shuffle(start) {
-        // This code is run options.fps times per second
-        // and updates the contents of the page element
+        for (var i = 0; i < str.length; i++) {
+          var ch = str[i]
 
-        var i,
-          len = letters.length,
-          strCopy = str.slice(0) // Fresh copy of the string
-
-        if (start > len) {
-          // The animation is complete. Updating the
-          // flag and triggering the callback;
-
-          el.data('animated', false)
-          options.callback(el)
-          return
-        }
-
-        // All the work gets done here
-        for (i = Math.max(start, 0); i < len; i++) {
-          // The start argument and options.step limit
-          // the characters we will be working on at once
-
-          if (i < start + options.step) {
-            // Generate a random character at thsi position
-            strCopy[letters[i]] = randomChar(types[letters[i]])
+          if (ch == ' ') {
+            types[i] = 'space'
+            continue
+          } else if (/[a-z]/.test(ch)) {
+            types[i] = 'lowerLetter'
+          } else if (/[A-Z]/.test(ch)) {
+            types[i] = 'upperLetter'
           } else {
-            strCopy[letters[i]] = ''
+            types[i] = 'symbol'
           }
+
+          letters.push(i)
         }
 
-        el.text(strCopy.join(''))
+        el.html('')
 
-        setTimeout(function () {
-          shuffle(start + 1)
-        }, 1000 / options.fps)
-      })(-options.step)
-    })
-  }
+          // Self executing named function expression:
 
-  function randomChar(type) {
-    var pool = ''
+          ; (function shuffle(start) {
+            // This code is run options.fps times per second
+            // and updates the contents of the page element
 
-    if (type == 'lowerLetter') {
-      pool = 'abcdefghijklmnopqrstuvwxyz0123456789'
-    } else if (type == 'upperLetter') {
-      pool = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+            var i,
+              len = letters.length,
+              strCopy = str.slice(0) // Fresh copy of the string
+
+            if (start > len) {
+              // The animation is complete. Updating the
+              // flag and triggering the callback;
+
+              el.data('animated', false)
+              options.callback(el)
+              return
+            }
+
+            // All the work gets done here
+            for (i = Math.max(start, 0); i < len; i++) {
+              // The start argument and options.step limit
+              // the characters we will be working on at once
+
+              if (i < start + options.step) {
+                // Generate a random character at thsi position
+                strCopy[letters[i]] = randomChar(types[letters[i]])
+              } else {
+                strCopy[letters[i]] = ''
+              }
+            }
+
+            el.text(strCopy.join(''))
+
+            setTimeout(function () {
+              shuffle(start + 1)
+            }, 1000 / options.fps)
+          })(-options.step)
+      })
     }
-    // else if (type == "symbol"){
-    // 	pool = ",.?/\\(^)![]{}*&^%$#'\"";
-    // }
 
-    var arr = pool.split('')
-    return arr[Math.floor(Math.random() * arr.length)]
-  }
-})(jQuery)
+    function randomChar(type) {
+      var pool = ''
+
+      if (type == 'lowerLetter') {
+        pool = 'abcdefghijklmnopqrstuvwxyz0123456789'
+      } else if (type == 'upperLetter') {
+        pool = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+      }
+      // else if (type == "symbol"){
+      // 	pool = ",.?/\\(^)![]{}*&^%$#'\"";
+      // }
+
+      var arr = pool.split('')
+      return arr[Math.floor(Math.random() * arr.length)]
+    }
+  })(jQuery)
 
 //end of shuffle leeters plugin
 
@@ -210,7 +210,7 @@ var main = function () {
   $('a[href*=#]:not([href=#])').click(function () {
     if (
       location.pathname.replace(/^\//, '') ==
-        this.pathname.replace(/^\//, '') &&
+      this.pathname.replace(/^\//, '') &&
       location.hostname == this.hostname
     ) {
       var target = $(this.hash)
@@ -474,7 +474,7 @@ function myFunction() {
 
   $pre_para.removeClass('invisible')
   $digm.text('mechs')
-  
+
   // Set the text of $pre_para to "to" only once, when the page is loaded
   $pre_para.shuffleLetters({ text: 'to' })
 
@@ -496,8 +496,8 @@ function myFunction() {
   }, 3000)
 }
 
-$(document).ready(function() {
-  setInterval(myFunction, 5000); // Run the function every 5 seconds
+$(document).ready(function () {
+  setInterval(myFunction, 15000); // Run the function every 5 seconds
 });
 
 
