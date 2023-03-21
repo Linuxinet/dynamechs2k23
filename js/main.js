@@ -312,7 +312,9 @@ var main = function () {
       $("a[href$='About']").removeClass('nav-active')
       $("a[href$='Team']").removeClass('nav-active')
       $("a[href$='Events']").removeClass('nav-active')
+      $("a[href$='Gallery']").removeClass('nav-active')
       $("a[href$='Register']").addClass('nav-active')
+      $("a[href$='Map']").addClass('nav-active')
     }
   }
 
