@@ -757,6 +757,90 @@ li ol li {
 
 /* NOTE: event details css end */
 
+
+/* NOTE: gallery details  start */
+
+.gallery-container{
+  width:99vw;
+  background-color: grey !important;
+  /* background:black-overlay; */
+  /* background: #333 url('../img/slide-bg.jpg') no-repeat center center fixed; */
+
+  background-size: cover;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items: center;
+  padding:20px;
+  padding-left:0px;
+  /* background: url('../img/black-pattern.png'); */
+}
+.card-img{
+  height:300px;
+  width:450px;
+  margin-bottom: 45px;
+  transition: 1s;
+  border-radius:8px;
+  box-shadow:-4.5px 8px 13px black;
+}
+
+.card-img:hover {
+  transform: scale(1.08);
+  z-index: 1.5;
+}
+
+
+.card-image1{
+  
+  background-image: url('../img/IMG_4689.JPG');
+  background-size: cover;
+}
+.card-image2{
+  background-image: url('../img/IMG_4498.JPG');
+  background-size: cover;
+}
+.card-image3{
+  background-image: url('../img/IMG_4599.JPG');
+  background-size: cover;
+}
+.card-image4{
+  background-image: url('../img/IMG_4906.JPG');
+  background-size: cover;
+}
+.card-image5{
+  background-image: url('../img/IMG_4672.JPG');
+  background-size: cover;
+}
+.card-image6{
+  background-image: url('../img/IMG_0012.JPG');
+  background-size: cover;
+}
+.card-container{
+display:flex;
+justify-content:space-around;
+/* width:94%; */
+flex-direction:row;
+flex-wrap:wrap;
+/* margin:20px; */
+}
+/* .card-img{
+   width:150px;
+   margin-bottom:20px;
+   margin-right:0px;
+} */
+/* for mobile phones */
+
+@media (max-width:600px){
+  .card-img{
+    height: 250px;;
+    width: 330px;;
+    margin-bottom: 45px;
+}
+}
+/* NOTE: gallery details end */
+
+
 .map-line {
   width: 100%;
   height: 5px;
@@ -963,6 +1047,22 @@ footer {
 */
 
 
+/* .img-gallery-third:hover {
+  transform: scale(1.12);
+  z-index: 4;
+} */
+
+/* .img-gallery-third {
+  width: 250px;
+  border-radius: 50px;
+  height: 250px;
+  padding: 20px;
+  padding-bottom: 5px;
+  margin-right: 15px;
+  transition: 1s;
+} */
+
+
 
 
 .image-container {
@@ -980,6 +1080,8 @@ footer {
   padding-bottom: 5px;
   margin-right: 15px;
   transition: 1s;
+  box-shadow:-3px 5px 15px azure;
+
 }
 
 .img-staff:hover,
@@ -1002,6 +1104,8 @@ footer {
   padding-bottom: 5px;
   margin-right: 15px;
   /* background-color: white; */
+  box-shadow:-3px 5px 15px azure;
+
   transition: 1s;
 }
 
