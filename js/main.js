@@ -490,6 +490,29 @@ $(window).load(function () {
 //   setInterval(myFunction, 15000); // Run the function every 5 seconds
 // });
 
+// Show the button when the user scrolls down 20px from the top of the document
+window.onscroll = function() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topButton").style.display = "block";
+  } else {
+    document.getElementById("topButton").style.display = "none";
+  }
+};
+
+// Scroll to the top of the document when the button is clicked
+function scrollToTop() {
+  const scrollDuration = 500; // milliseconds
+  const scrollStep = -window.scrollY / (scrollDuration / 15);
+  
+  const scrollInterval = setInterval(() => {
+    if (window.scrollY !== 0) {
+      window.scrollBy(0, scrollStep);
+    } else {
+      clearInterval(scrollInterval);
+    }
+  }, 15);
+}
+
 
 
 window.addEventListener(

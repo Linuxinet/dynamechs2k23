@@ -864,50 +864,101 @@ footer {
   flex-wrap: wrap;
 }
 
+#topButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+	transition:all .3s ease-out;
+  transform: translate(-50%, -50%);
+
+
+}
+
+#topButton:hover {
+  background-color: #000000;
+}
+
+#topButton::before {
+  content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:50%;
+	left:50%;
+	right:50%;
+  bottom: 50%;
+	margin: -0.8em;
+	border:solid .13em white;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+
+#topButton:hover{
+	color:rgb(247, 0, 0);
+	border-color:rgb(255, 255, 255);
+}
+#topButton:hover:before{
+	transform: rotate(360deg);
+}
+
+@media (max-width: 767px) {
+  #topButton {
+    bottom: 10px;
+    right: 20px;
+    left: auto;
+    transform: translateX(50%);
+  }
+}
+
+
+
 /* 
-*/
 
- /* .img-staff {
-  width: 100%;
-  height: auto; 
-
- }
-
- .img-name, .image-container:after {
-  width: 100%;
-  position: absolute;
-  left: 0;
- }
-
-.image-container:after {
-  content: '';
-  height: 100%;
-  top: 0;
-  transition: .5s;
+#topButton {
+  color:rgb(3, 3, 3);
+	padding-top:1.8em;
+	position:relative;
+	border-color:white;
+	text-decoration:none;
+	transition:all .3s ease-out;
 }
 
-.image-container:hover:after{
-  background: linear-gradient(to bottom, rgba(199,0,57,.01)0, rgba(199,0,57,.25) 25%, rgba(199,0,57,.75) 75%), rgba(199,0,57,.95) 100%;
+#topButton:before {
+  content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-.7em;
+	border:solid .13em white;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+#topButton:hover{
+	color:pink;
+	border-color:pink;
+}
+#topButton:hover:before{
+	transform: rotate(360deg);
 }
 
-.img-name {
-  padding: 20px;
-  margin-bottom: 20px;
-  bottom: 0;
-  z-index: 1;
-  transition: all .5 cubic-bezier(.13, .62,.81,.91) 0s;
-  transform: translateY(145px);
-}
-
-.img-name:hover, .img-name {
-  transform: translateY(0); 
-} */
-
-
-
-
-
-/*
 
 */
 
