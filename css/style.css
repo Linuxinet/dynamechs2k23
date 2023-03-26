@@ -784,6 +784,7 @@ li ol li {
     transition: 1s;
     border-radius: 8px;
     box-shadow: -4.5px 8px 13px black;
+    padding-left:  ;
 }
 
 .card-img:hover {
