@@ -247,12 +247,15 @@ var main = function () {
       teamHeight = $('.team-container').height(),
       eventGridHeight = $('.event-container').height(),
       eventContentHeight = $('.event-content').height(),
+      galleryHeight = $('.gallery-container').height(),
+      registerHeight = $('.register-container').height(),
+      mapHeight = $('.ssn-map').height(),
       totalEventScrollHeight =
         homeHeight +
         aboutHeight +
         100 +
         teamHeight +
-        eventGridHeight +
+        eventGridHeight + galleryHeight + mapHeight + registerHeight +
         100 -
         topBarHeight
 
@@ -306,6 +309,47 @@ var main = function () {
       $("a[href$='Events']").removeClass('nav-active')
     }
 
+// 
+
+if (
+  homeHeight + aboutHeight + 100 + teamHeight + eventGridHeight - topBarHeight <=
+  winScroll
+) {
+  activeNav.removeClass('nav-active')
+  $("a[href$='About']").removeClass('nav-active')
+  $("a[href$='Team']").removeClass('nav-active')
+  $("a[href$='Events']").removeClass('nav-active')
+  $("a[href$='Gallery']").addClass('nav-active')
+} else if (
+  homeHeight + aboutHeight + 100 + teamHeight + eventGridHeight - topBarHeight >
+  winScroll
+) {
+  $("a[href$='Gallery']").removeClass('nav-active')
+}
+
+
+// 
+
+if (
+  homeHeight + aboutHeight + 100 + teamHeight + eventGridHeight + galleryHeight - topBarHeight <=
+  winScroll
+) {
+  activeNav.removeClass('nav-active')
+  $("a[href$='About']").removeClass('nav-active')
+  $("a[href$='Team']").removeClass('nav-active')
+  $("a[href$='Events']").removeClass('nav-active')
+  $("a[href$='Gallery']").removeClass('nav-active')
+  $("a[href$='Register']").addClass('nav-active')
+} else if (
+  homeHeight + aboutHeight + 100 + teamHeight + eventGridHeight + galleryHeight - topBarHeight >
+  winScroll
+) {
+  $("a[href$='Register']").removeClass('nav-active')
+}
+
+
+//
+
     if (totalEventScrollHeight <= winScroll) {
       //firefox bug 1px compensation
       activeNav.removeClass('nav-active')
@@ -313,7 +357,7 @@ var main = function () {
       $("a[href$='Team']").removeClass('nav-active')
       $("a[href$='Events']").removeClass('nav-active')
       $("a[href$='Gallery']").removeClass('nav-active')
-      $("a[href$='Register']").addClass('nav-active')
+      $("a[href$='Register']").removeClass('nav-active')
       $("a[href$='Map']").addClass('nav-active')
     }
   }
